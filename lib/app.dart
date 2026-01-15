@@ -7,6 +7,8 @@
 //import 'package:course_flutter_codes/module%2011/textfield.dart';
 //import 'package:course_flutter_codes/module%2012/List_v2.dart';
 //import 'package:course_flutter_codes/module%2012/ViewLists.dart';
+import 'package:course_flutter_codes/Animations/PagesViewd.dart';
+import 'package:course_flutter_codes/Animations/usingLottie.dart';
 import 'package:course_flutter_codes/Navigation/NavigatorHome.dart';
 import 'package:course_flutter_codes/Navigation/newItem.dart';
 import 'package:course_flutter_codes/task%20sh/task2.dart';
@@ -31,12 +33,14 @@ class MyApp extends StatelessWidget {
       //home: Module14Class1(),
       //home: TaskTwo(),
       //home: NavigatorHome(),
+      //home: UsingLottie(),
+      home: PagesViewd(),
 
-      initialRoute: "/",
-      routes: {
-        "/": (context)=>NavigatorHome(),
-        "/addNewItem":(context)=>NewItem(),
-      },
+      // initialRoute: "/",
+      // routes: {
+      //   "/": (context)=>NavigatorHome(),
+      //   "/addNewItem":(context)=>NewItem(),
+      // },
 
     );
   }
