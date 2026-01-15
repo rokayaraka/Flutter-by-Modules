@@ -1,12 +1,15 @@
 //import 'package:course_flutter_codes/module%2010/flutter_buttons.dart';
 //import 'package:course_flutter_codes/module%2010/home.dart';
 //import 'package:course_flutter_codes/module%2011/class2.dart';
-import 'package:course_flutter_codes/module%2014/class1.dart';
+//import 'package:course_flutter_codes/module%2014/class1.dart';
 //import 'package:course_flutter_codes/task%20sh/Task1.dart';
 //import 'package:course_flutter_codes/task%20sh/TaskOneAgain.dart';
 //import 'package:course_flutter_codes/module%2011/textfield.dart';
 //import 'package:course_flutter_codes/module%2012/List_v2.dart';
 //import 'package:course_flutter_codes/module%2012/ViewLists.dart';
+import 'package:course_flutter_codes/Navigation/NavigatorHome.dart';
+import 'package:course_flutter_codes/Navigation/newItem.dart';
+import 'package:course_flutter_codes/task%20sh/task2.dart';
 import 'package:flutter/material.dart';
 
 class MyApp extends StatelessWidget {
@@ -25,7 +28,16 @@ class MyApp extends StatelessWidget {
       //home: PracticeTextFormField(),
       // home: Task1(),
       //home: Taskoneagain(),
-      home: Module14Class1(),
+      //home: Module14Class1(),
+      //home: TaskTwo(),
+      //home: NavigatorHome(),
+
+      initialRoute: "/",
+      routes: {
+        "/": (context)=>NavigatorHome(),
+        "/addNewItem":(context)=>NewItem(),
+      },
+
     );
   }
 }
