@@ -13,7 +13,7 @@ class PagesViewd extends StatefulWidget {
 }
 
 class _PagesViewdState extends State<PagesViewd> {
-  PageController _controller = PageController();
+  final PageController _controller = PageController();
 
   //keep tarck we are in the last page or not
   bool onLastPage = false;
@@ -47,7 +47,11 @@ class _PagesViewdState extends State<PagesViewd> {
                   child: Text("Skip"),
                 ),
 
-                SmoothPageIndicator(controller: _controller, count: 3),
+                SmoothPageIndicator(
+                  controller: _controller,
+                  count: 3,
+                  effect: JumpingDotEffect(),
+                ),
 
                 //next
                 onLastPage
