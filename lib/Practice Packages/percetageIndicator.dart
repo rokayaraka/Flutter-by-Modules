@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:percent_indicator/circular_percent_indicator.dart';
 import 'package:percent_indicator/flutter_percent_indicator.dart';
 
 class PercetageINdicator extends StatefulWidget {
@@ -21,6 +20,7 @@ class _PercetageINdicatorState extends State<PercetageINdicator> {
             children: [
               CircularPercentIndicator(
                 animation: true,
+                animationDuration: 3000,
                 radius: 200,
                 lineWidth: 20,
                 percent: 0.9,
@@ -36,8 +36,9 @@ class _PercetageINdicatorState extends State<PercetageINdicator> {
               ),
           
               LinearPercentIndicator(
+                linearStrokeCap: LinearStrokeCap.round,
                 animation: true,
-                animationDuration: 4000,
+                animationDuration: 3000,
                 lineHeight: 15,
                 percent: 0.6,
                 progressColor: Colors.purple,
