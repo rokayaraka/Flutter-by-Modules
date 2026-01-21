@@ -31,7 +31,9 @@ class _Module14Class3State extends State<Module14Class3> {
                 labelColor: Colors.white,
                 unselectedLabelColor: Colors.deepPurple,
                 tabs: [
-                  Tab(icon: Icon(Icons.home), text: "Home"),
+                  Tab(icon: Icon(Icons.home), text: "Home",
+                  
+                  ),
                   Tab(icon: Icon(Icons.favorite), text: "Favourite"),
                   Tab(icon: Icon(Icons.settings), text: "Settings"),
                 ],
@@ -47,7 +49,11 @@ class _Module14Class3State extends State<Module14Class3> {
               width: 50,
 
               decoration: BoxDecoration(color: Colors.blue),
-              child: Text("Home"),
+              child: Column(
+                children: [
+                  Image.network("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQGmWWVkak3lST3VXtqqTMXB3KmnuE7ZJdtJw&s"),
+                ],
+              ),
             ),
             Container(
               height: 50,
