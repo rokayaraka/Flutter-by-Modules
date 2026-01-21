@@ -10,12 +10,13 @@
 //import 'package:course_flutter_codes/Animations/PagesViewd.dart';
 // import 'package:course_flutter_codes/Animations/usingLottie.dart';
 //import 'package:course_flutter_codes/Navigation/NavigatorHome.dart';
-import 'package:course_flutter_codes/Practice%20Packages/percetageIndicator.dart';
-import 'package:course_flutter_codes/Practice%20Packages/profile.dart';
-import 'package:course_flutter_codes/module%2013/class%201.dart';
-import 'package:course_flutter_codes/module%2014/class3.dart';
-import 'package:course_flutter_codes/module15/class1.dart';
+// import 'package:course_flutter_codes/Practice%20Packages/percetageIndicator.dart';
+// import 'package:course_flutter_codes/Practice%20Packages/profile.dart';
+// import 'package:course_flutter_codes/module%2013/class%201.dart';
+// import 'package:course_flutter_codes/module%2014/class3.dart';
+// import 'package:course_flutter_codes/module15/class1.dart';
 import 'package:course_flutter_codes/module15/class2.dart';
+import 'package:course_flutter_codes/ResponsiveDesign/responsiveHome.dart';
 // import 'package:course_flutter_codes/Navigation/newItem.dart';
 // import 'package:course_flutter_codes/task%20sh/task2.dart';
 import 'package:flutter/material.dart';
@@ -47,7 +48,7 @@ class MyApp extends StatelessWidget {
       //home: UsingLottie(),
       //home: PagesViewd(),
       //home: Module14Class3(),
-      home: Module15Class2(),
+      home: ResponsiveDesign(),
 
 
       // initialRoute: "/",
