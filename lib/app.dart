@@ -16,8 +16,8 @@
 // import 'package:course_flutter_codes/module%2014/class3.dart';
 // import 'package:course_flutter_codes/module15/class1.dart';
 //import 'package:course_flutter_codes/module15/class2.dart';
-import 'package:course_flutter_codes/ResponsiveDesign/responsiveHome.dart';
-import 'package:course_flutter_codes/module15/class3.dart';
+//import 'package:course_flutter_codes/ResponsiveDesign/responsiveHome.dart';
+import 'package:course_flutter_codes/mini%20project/class3.dart';
 // import 'package:course_flutter_codes/Navigation/newItem.dart';
 // import 'package:course_flutter_codes/task%20sh/task2.dart';
 import 'package:flutter/material.dart';

@@ -14,12 +14,12 @@ final List<Map<String,dynamic>>items;
         return Card(
           child: ListTile(
             leading: CircleAvatar(
-              backgroundColor: Colors.green,
-              child: Icon(Icons.arrow_upward,color: Colors.white,),
+              backgroundColor:inEarning? Colors.green: Colors.red,
+              child: Icon(inEarning? Icons.arrow_upward :Icons.arrow_downward),
             ),
             title: Text(items[index]["title"]),
             subtitle: Text(items[index]["date"]),
-            trailing: Text(items[index]["amount"],
+            trailing: Text(items[index]["amount"].toString(),
              style: TextStyle(color: Colors.green,
              fontSize: 20,
              fontWeight: FontWeight.bold,

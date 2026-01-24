@@ -1,7 +1,8 @@
 import 'package:flutter/material.dart';
 
 class Buildsummerycard extends StatelessWidget {
-  final String title, amount;
+  final String title;
+  final double amount;
   final Color cardColor;
   const Buildsummerycard({
     super.key,
@@ -21,7 +22,7 @@ class Buildsummerycard extends StatelessWidget {
             children: [
               Text(title, style: TextStyle(fontSize: 16)),
               Text(
-                amount,
+                amount.toString(),
                 style: TextStyle(fontSize: 25, fontWeight: FontWeight.bold),
               ),
             ],

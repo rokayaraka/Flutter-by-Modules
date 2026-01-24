@@ -1,5 +1,5 @@
 import 'package:course_flutter_codes/Practice%20Packages/percetageIndicator.dart';
-import 'package:course_flutter_codes/module%2011/textfield.dart';
+//import 'package:course_flutter_codes/module%2011/taxtTextField.dart';
 import 'package:course_flutter_codes/module%2013/class%201.dart';
 import 'package:course_flutter_codes/module%2014/class1.dart';
 import 'package:course_flutter_codes/module%2014/class3.dart';
@@ -19,7 +19,7 @@ class _BottomNavState extends State<BottomNav> {
     PercetageINdicator(),
     Module14Class1(),
     Module13Class1(),
-    Textfield(),
+    //TextTextField(controller: _, decoration: null,),
     Module14Class3(),
   ];
 
