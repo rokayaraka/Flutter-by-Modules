@@ -30,5 +30,10 @@ class TaskDatabase{
     return List.generate(maps.length,(i)=>Task.formMap(maps[i]) );
    
    }
+
+    static Future<void> deleteTask(int id)async{
+      final db = await getDb();
+      await db.delete('task',where: 'id=?',whereArgs: [id]);
+    }
   
 }

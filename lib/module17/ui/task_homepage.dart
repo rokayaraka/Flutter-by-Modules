@@ -29,6 +29,14 @@ class _TaskHomePageState extends State<TaskHomePage> {
     });
   }
 
+Future<void> deleteTask(int id)async{
+  await TaskDatabase.deleteTask(id);
+  refreshTask();
+  setState(() {
+    
+  });
+}
+
 Future<void> addTask()async{
    if(controller.text.isNotEmpty){
     await TaskDatabase.insertTask(Task(title: controller.text, isDone: false));
@@ -63,6 +71,7 @@ Future<void> addTask()async{
                   ),
                 )),
                 IconButton(onPressed: addTask, icon: Icon(Icons.add)),
+                IconButton(onPressed: ()=>deleteTask(tasks[0].id!), icon: Icon(Icons.delete)),
               ],
             ),
           ),
@@ -72,9 +81,13 @@ Future<void> addTask()async{
               itemBuilder: (context,index){
                 final task=tasks[index];
                 return Card(
-                  child: ListTile(
-                    leading: Checkbox(value: task.isDone, onChanged: (_){}),
-                    title: Text(task.title),
+                  child: Row(
+                    children: [
+                      ListTile(
+                        leading: Checkbox(value: task.isDone, onChanged: (_){}),
+                        title: Text(task.title),
+                      ),
+                    ],
                   ),
                 );
             
