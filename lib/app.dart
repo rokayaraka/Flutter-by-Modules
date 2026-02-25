@@ -20,6 +20,7 @@
 
 //import 'package:course_flutter_codes/Animations/udemy%20Practice/Animdo/Pages/AnimdoHomePage.dart';
 import 'package:course_flutter_codes/module17/ui/task_homepage.dart';
+import 'package:course_flutter_codes/module18/apiClass.dart';
 //import 'package:course_flutter_codes/module17/ui/task_homepage.dart';
 // import 'package:course_flutter_codes/Navigation/newItem.dart';
 // import 'package:course_flutter_codes/task%20sh/task2.dart';
@@ -52,7 +53,7 @@ class MyApp extends StatelessWidget {
       //home: UsingLottie(),
       //home: PagesViewd(),
       //home: Module14Class3(),
-      home: TaskHomePage(),
+      home: ApiCallClass(),
 
 
       // initialRoute: "/",

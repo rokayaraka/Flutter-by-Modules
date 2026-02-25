@@ -41,6 +41,7 @@ dependencies:
   flutter_screenutil: ^5.9.3
   sqflite: 
   path: 
+  http: ^1.6.0
 
 dev_dependencies:
   flutter_test:
