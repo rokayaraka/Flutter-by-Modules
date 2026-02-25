@@ -1,5 +1,8 @@
 import 'dart:convert';
+import 'dart:developer';
 
+import 'package:course_flutter_codes/CRUD/model/product.dart';
+import 'package:course_flutter_codes/CRUD/utils/urls.dart';
 import 'package:flutter/material.dart';
 import 'package:http/http.dart'as http;
 
@@ -13,17 +16,27 @@ class ApiCallClass extends StatefulWidget {
 class _ApiCallClassState extends State<ApiCallClass> {
  
 
-  List products=[];
+  List <Product> products=[];
   Future<void>getProducts()async{
-    final url= Uri.parse('https://api.aladhan.com/v1/islamicCalendar/methods');
+    final url= Uri.parse(Urls.readProduct);
     final response =await http.get(url);
 
     if(response.statusCode==200){
       final jsonResponse = jsonDecode(response.body);
       print(response.body);
+      log(jsonResponse[0].runtimeType.toString());
+        for(dynamic item in jsonResponse){
+          final product=Product.fromJson(item);
+          log(product.runtimeType.toString());
+
+          products.add(product);
+        }
       setState(() {
-        products=jsonResponse['data'];
+      
+      
       });
+      
+
     }
   }
  @override
@@ -47,9 +60,12 @@ class _ApiCallClassState extends State<ApiCallClass> {
           return Container(
             child: Column(
               children: [
-               Text(item['id']),
+               SizedBox(
+                height: 100,
+                child: Image.network(item.image,fit: BoxFit.cover,)),
 
-                Text(item['validity']),
+                Text(item.title),
+                
                 
               ],
             ),
